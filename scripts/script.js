@@ -27,6 +27,12 @@ const displayRemainingTime = (remainingTime) => {
   document.getElementById("timer").innerHTML = `${minutes}:${formattedSeconds}`;
 };
 
+// Function to hide the form
+const hideForm = () => {
+  let form = document.getElementById("countdown-form");
+  form.style.display = "none";
+};
+
 // Event handler for form submission
 const handleFormSubmit = (event) => {
   event.preventDefault();
@@ -39,6 +45,7 @@ const handleFormSubmit = (event) => {
   const totalTime = totalTimeInput.value;
   const stepInterval = stepIntervalInput.value;
 
+  hideForm();
   startCountdown(totalTime, stepInterval);
 };
 
