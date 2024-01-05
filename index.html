@@ -3,24 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
     <title>Countdown</title>
   </head>
   <body>
     <main>
       <form id="countdown-form">
-        <div>
+        <div class="question">
           <label for="total-time">Total time</label>
           <input type="number" name="total-time" id="total-time" />
         </div>
-        <div>
+        <div class="question">
           <label for="steps-interval">Steps</label>
           <input type="number" name="steps-interval" id="steps-interval" />
         </div>
         <input type="submit" value="Start" id="start" />
       </form>
-      <section>
-        <p id="timer"></p>
-      </section>
+      <p id="timer" ></p>
     </main>
   </body>
   <script type="module" src="./scripts/script.js"></script>

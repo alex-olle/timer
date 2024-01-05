@@ -24,7 +24,9 @@ const displayRemainingTime = (remainingTime) => {
   const seconds = remainingTime - minutes * 60;
   const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
 
-  document.getElementById("timer").innerHTML = `${minutes}:${formattedSeconds}`;
+  timer = document.getElementById("timer");
+  timer.style.display = "flex";
+  timer.innerHTML = `${minutes}:${formattedSeconds}`;
 };
 
 // Function to hide the form
