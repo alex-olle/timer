@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+  </head>
+  <body>
+    <main>
+      <form id="countdown-form">
+        <div>
+          <label for="total-time">Total time</label>
+          <input type="number" name="total-time" id="total-time" />
+        </div>
+        <div>
+          <label for="steps-interval">Steps</label>
+          <input type="number" name="steps-interval" id="steps-interval" />
+        </div>
+        <input type="submit" value="Start" id="start" />
+      </form>
+      <section>
+        <p id="timer"></p>
+      </section>
+    </main>
+  </body>
+  <script type="module" src="./scripts/script.js"></script>
+</html>
