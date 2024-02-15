@@ -6,12 +6,13 @@ const startCountdown = (totalTime, stepInterval) => {
   const countdownInterval = setInterval(() => {
     displayRemainingTime(remainingTime);
     if (remainingTime <= 0) {
+      let intervalSound = new Audio("../static/endingSound.mp3");
+      intervalSound.play();
       clearInterval(countdownInterval);
-      // TODO: Add a sound
     } else {
       if (remainingTime % intervalMins === 0) {
-        console.log("hola");
-        // TODO: Add another sound
+        let intervalSound = new Audio("../static/intervalSound.mp3");
+        intervalSound.play();
       }
       remainingTime--;
     }
