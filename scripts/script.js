@@ -3,6 +3,9 @@ const startCountdown = (totalTime, stepInterval) => {
   let remainingTime = totalTime * 60;
   const intervalMins = stepInterval * 60;
 
+  let meditationSound = new Audio("../static/meditate.mp3");
+  meditationSound.play();
+
   const countdownInterval = setInterval(() => {
     displayRemainingTime(remainingTime);
     if (remainingTime <= 0) {
