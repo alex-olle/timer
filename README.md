@@ -51,8 +51,7 @@ There are many timers, meditation videos, podcasts, apps... but I could not find
 
 ## Roadmap
 
-- [ ] Change audio from mp3 to URL if possible
-- [ ] Fix audio issue: Second interval is not playing
+- [ ] Fix audio issue on Mobile devices
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
