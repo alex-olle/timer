@@ -12,7 +12,7 @@
   <h3 align="center">Meditation timer</h3>
 
   <p align="center">
-    Customizable meditation timer with soothing background music and user-defined interval reminders, fostering a serene and focused meditation experience."
+    Customizable meditation timer with soothing background music and user-defined interval reminders, fostering a serene and focused meditation experience.
   </p>
 </div>
 
